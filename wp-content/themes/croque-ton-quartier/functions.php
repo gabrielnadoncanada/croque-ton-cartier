@@ -205,23 +205,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
- * Functions which render a hero banner with multiple states.
+ * Add various custom image size.
  */
-function croque_ton_quartier_hero() {
-	echo 
-	'
-	<div class="hero-container">
-		<div class="row">
-			<div class="col">
-				<p>Lorem ipsum dolar sit.</p>
-			</div>
-			<div class="col">
-				<p>Lorem ipsum dolar sit.</p>
-			</div>
-		
-		</div>
-	</div>	
-	';
+add_image_size( 'portrait-1', 715, 751, false );
+add_image_size( 'paysage-1', 1440, 751, false );
+add_image_size( 'portrait-2', 293, 351, false );
+
+function custom_excerpt_length( $length ) {
+	return 40;
 }
 
-add_action( 'hero','croque_ton_quartier_hero' );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
