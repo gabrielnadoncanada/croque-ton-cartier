@@ -946,12 +946,7 @@ footer {
 .post-template-default article {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border: 1px black solid;
   padding: 2rem; }
-
-.cadre {
-  border: solid black 1px;
-  margin: 5rem; }
 
 /*--------------------------------------------------------------
 # Bootstrap Grid
