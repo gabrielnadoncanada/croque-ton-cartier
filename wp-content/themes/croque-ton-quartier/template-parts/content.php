@@ -8,7 +8,7 @@
  */
 
 ?>
-
+<div class="container">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -52,6 +52,7 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+</div>
 
 	<footer class="entry-footer">
 		<?php croque_ton_quartier_entry_footer(); ?>
