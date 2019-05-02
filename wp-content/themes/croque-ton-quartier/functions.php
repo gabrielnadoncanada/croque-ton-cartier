@@ -212,7 +212,7 @@ add_image_size( 'paysage-1', 1440, 751, false );
 add_image_size( 'portrait-2', 293, 351, false );
 
 function custom_excerpt_length( $length ) {
-	return 40;
+	return 50;
 }
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
