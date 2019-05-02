@@ -1,21 +1,36 @@
 .p1 {
-    padding: 1em;
+    padding: 1rem;
 }
 
 .p2 {
-    padding: 2em;
+    padding: 2rem;
 }
 
-a{
-  text-decoration: none;
+.p05 {
+  padding: 0.5rem;
 }
 
-#masthead {
-    background-color: $color__background-header;
-    opacity: 0.8;
-    //position: fixed;
+.transition {
+  transition: 0.5s all;
 }
 
+// Header
+// .custom-logo-link {
+//   margin-top: 10px;
+// }
+
+.site-header {
+  background-color: $color__background-header;
+  opacity: 0.8;
+  //position: fixed;
+
+  .row {
+    @extend .p1;
+  }
+}
+
+
+// Footer
 footer {
     background-color: $color__background-footer;
     color: $color__text-footer;
@@ -32,57 +47,6 @@ footer {
             color: darken( $color__text-footer, 20% );
         }
     }
-}
-
-
-// hero-banner
-
-// .hero-separator {
-//     position: relative;
-
-//     &::before,
-//     &::after {
-//     content: '';
-//     position: absolute;
-//     pointer-events: none;
-//     }
-
-//     &.diagonalseparator {
-//     z-index: 1;
-
-
-
-//         &::before {
-
-//             z-index:-1;
-//             width:15px;
-//             height: 110%;
-//             background-color: $color__white;
-//             transform:rotate(15deg);
-//             transform-origin: top;
-//         }
-//     }
-// }
-
-.hero-container .row{
-    height: 50vh;
-    background-color: $color__primary;
-
-    .col:first-child {
-        // background-color: $color__black;
-        background-image: url('http://localhost/wordpress/wp-content/uploads/2019/04/pommes3.jpg')
-    }
-
-    .col:nth-child(2) {
-        // background-color: $color__primary;
-        background-size: auto, cover;
-    // background-image: url('http://localhost/wordpress/wp-content/uploads/2019/04/pattern_vert.png');
-    //    opacity: 0.3;
-    }
-}
-
-.site-branding {
-    display: none;
 }
 
 .card{
@@ -124,7 +88,6 @@ footer {
   border-color: $color__primary;
   padding: 1rem 2rem;
 }
-// test pour push
 
 .card-image{
   img{
