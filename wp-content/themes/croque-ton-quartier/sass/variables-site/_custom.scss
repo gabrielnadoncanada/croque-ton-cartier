@@ -104,9 +104,17 @@ footer {
   margin-bottom: 100px!important;
 }
 
+.site-content{
+  background-image: url("../../uploads/2019/04/pattern-legumes.png");
+  background-repeat: repeat;
+  z-index: 1;
+}
+
 // Encadrement du main de chaque page
 
 .site-main{
+  // pour masquer les légumes du fond
+  background-color: $color__background-body;
   // pour le positionnnement du titre (voir ci-dessous)
   text-align: center;
   // pour la bordure double
@@ -129,13 +137,6 @@ footer {
 .suite{
   a{
     text-transform: uppercase!important;
-  }
-}
-
-.blog{
-  main{
-    border: solid 1px black;
-    margin: 5rem auto;
   }
 }
 

@@ -17,7 +17,9 @@ get_header();
 <div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="card-blog">
+				<header>
+					<h1 class="page-title">Blogue</h1>
+				</header>
 				<div class="paragraphe-blog">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -28,14 +30,6 @@ get_header();
 
 		<?php
 		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -56,7 +50,6 @@ get_header();
 
 		endif;
 		?>
-			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>
