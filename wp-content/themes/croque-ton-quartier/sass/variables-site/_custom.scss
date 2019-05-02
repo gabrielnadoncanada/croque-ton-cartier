@@ -14,9 +14,6 @@ a{
     background-color: $color__background-header;
     opacity: 0.8;
     //position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 footer {
@@ -105,9 +102,17 @@ footer {
   margin-bottom: 100px!important;
 }
 
-.card-blog{
-  border: solid 1px black;
-  padding: 5rem;
+// Encadrement du main de chaque page
+
+.site-main{
+  // pour le positionnnement du titre (voir ci-dessous)
+  text-align: center;
+  // pour la bordure double
+  margin: 3rem 5rem;
+  border-width: 4px;
+  border-style: double;
+  border-color: $color__primary;
+  padding: 1rem 2rem;
 }
 
 article{

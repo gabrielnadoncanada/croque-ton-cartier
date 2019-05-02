@@ -3,6 +3,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
-h1.entry-title{
-	color: green;
+.entry-header{
+	position: relative;
+}
+
+h1.entry-title,
+h1.page-title{
+	margin-top: -3rem;
+	color: white;
+	display: inline-block;
+	padding: 0.5rem 2rem;
+	background-color: $color__primary;
 }
