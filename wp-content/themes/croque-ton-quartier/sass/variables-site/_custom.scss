@@ -88,11 +88,13 @@ footer {
 .card{
   display: flex;
   justify-content: space-between;
+  margin: 3rem auto;
 }
 
 .post{
-  margin-left: 2rem;
+  margin-left: 1rem;
   text-align: left;
+  margin-right: 1rem;
 }
 
 .container-blog{
@@ -102,6 +104,7 @@ footer {
   margin-bottom: 100px!important;
 }
 
+<<<<<<< HEAD
 // Encadrement du main de chaque page
 
 .site-main{
@@ -113,10 +116,100 @@ footer {
   border-style: double;
   border-color: $color__primary;
   padding: 1rem 2rem;
+=======
+.card-blog{
+  border: solid 1px black;
+  padding: 5rem;
+  margin: 1rem;
+>>>>>>> 38f50dc796b3bf10dbf7ccc26b9d909b08fc6cbc
 }
 
-article{
-  p{
-    font-size: 0.75rem;
+.card-image{
+  img{
+    width: 300px!important;
+    height: 300px!important;
+    max-width: none;
   }
+}
+
+.suite{
+  a{
+    text-transform: uppercase!important;
+  }
+}
+
+.blog{
+  main{
+    border: solid 1px black;
+    margin: 5rem auto;
+  }
+}
+
+.article-blog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.photo {
+	width: 30%;
+	margin-right: 2%;
+	background-color: white;
+	color: #3e3e3e;
+	height: -moz-fit-content;
+	height: fit-content;
+
+	a {
+		color: #008000;
+	}
+
+	a:visited {
+		color: #008000;
+	}
+}
+
+.nav-previous{
+  a{
+  color: #008000!important;
+  }
+}
+
+.article-content {
+	width: 70%;
+	background-color: white;
+	color: #3e3e3e;
+	padding: 2% 5%;
+
+	h2 {
+		margin: 0;
+		padding-bottom: 3%;
+		border-bottom: 1px solid #3e3e3e;
+	}
+
+	a {
+		color: #008000;
+	}
+
+	a:visited {
+		color: #008000;
+	}
+}
+
+.paragraphe-blog{
+  p{
+  text-align: center;
+  }
+}
+
+.post-template-default{
+  article{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px black solid;
+    padding: 2rem;
+  }
+}
+
+.cadre{
+  border: solid black 1px;
+  margin: 5rem;
 }
