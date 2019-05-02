@@ -9,6 +9,8 @@
 
 ?>
 <div class="container">
+	<div class="cadre">
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -29,32 +31,39 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php croque_ton_quartier_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'croque-ton-quartier' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'croque-ton-quartier' ),
-			'after'  => '</div>',
-		) );
+	<div class="entry-content article-blog">
+		<div class="photo">
+			<div class="thumbnail">
+			<?php
+		the_post_thumbnail('large');
 		?>
-	</div><!-- .entry-content -->
-</div>
+			<ul class="infos">
+				<li> Date:
+					<?php the_date();?></li>
+				<?php
+					$categories = get_the_category();
+				?>
+				<?php if($categories) : ?>
+				<li>Catégorie(s) : </li>
+				<ul class="no-style">
+					<?php foreach($categories as $cat):?>
+					<?php $url = get_category_link($cat->term_id);?>
+					<li><a class="call-to-action" href="<?php $url; ?>">
+							<?php echo $cat->name; ?>
+						</a></li>
+					<?php endforeach;?>
+				</ul>
+				</ul>
+				<?php endif;?>
+			</div>
+		</div>
+		<div class="article-content">
+			<?php $blogUrl = get_permalink( get_option('page_for_posts') );?>
+			<h2>Par : <?php the_author();?></h2>
+			<?php the_content();?>
+			<a href="<?php echo $blogUrl;?>" class="call-to-action">Retour au blogue</a>
+		</div>
+	</div>
 
-	<footer class="entry-footer">
-		<?php croque_ton_quartier_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>

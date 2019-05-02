@@ -14,7 +14,7 @@
           <a href="<?php echo get_permalink();?>">Lire la suite</a>
         </div>
         <div class="card-date">
-              <?php echo get_the_date()?>
+            <?php echo get_the_date()?>
           </div>
     </article>
 </div>
