@@ -32,7 +32,7 @@
 
 	<header id="masthead" class="site-header">
 		
-		<div class="row">
+		<div class="nav-container row">
             <div class="site-branding col">
 				<?php
 				the_custom_logo();
@@ -63,20 +63,20 @@
 			
 		</div>
 
-		<div id="hero">
+		<div class="links" id="hero">
 			<div class="row">
-				<div class="col">
-					
-				</div>
-				<div class="col">
-				
-				</div>
+				<div class="links__left">
+					<div class="links__left__skew">
+						<div class="links__left__skew__img"></div>
+    				</div>
+  				</div> 
+  				<div class="links__right">
+     				<div class="links__right__skew">
+       					<div class="links__right__skew__img"></div>
+   					</div>
+  				</div> 
 			</div>
 		</div>
-		
-		
-		
 	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
 	

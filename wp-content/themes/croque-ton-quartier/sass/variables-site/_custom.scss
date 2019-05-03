@@ -27,19 +27,8 @@
 //    Header (le menu)    //
 ////////////////////////////
 
-.site-header {
-  background-color: $color__background-header;
-  opacity: 0.8;
-  //position: fixed;
-}
-
-#masthead {
-  .row {
-   
-    background-color: rgba($color__background-header,.85);
-   
-    //position: fixed;
-  }
+.nav-container {
+  background-color: rgba($color__background-header,.85);
 }
 
 ////////////////////////////
@@ -47,7 +36,7 @@
 ////////////////////////////
 #hero {
   .row {
-    height: 350px;
+    height: 100%;
     padding: 0;
   }
   .col:nth-child(1) {
@@ -88,7 +77,7 @@ footer {
 // Pattern de fond des pages (légumes - selon la saison !!!)
 
 .site-content{
-  background-image: url("../../uploads/2019/04/pattern_vert-150x150.png");
+  background-image: url("../../uploads/2019/04/pattern-legumes.png");
   background-repeat: repeat;
   // opacity: 0.5; // Problème: la propriété opacity s'étend à tous les enfants...
 }
@@ -235,3 +224,4 @@ footer {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
 }
+
