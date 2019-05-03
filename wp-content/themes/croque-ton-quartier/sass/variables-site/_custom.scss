@@ -1,3 +1,7 @@
+////////////////////////////
+//    Règles générales    //
+////////////////////////////
+
 .p1 {
     padding: 1rem;
 }
@@ -15,6 +19,19 @@
 }
 
 // Header
+// .custom-logo-link {
+//   margin-top: 10px;
+// }
+
+////////////////////////////
+//    Header (le menu)    //
+////////////////////////////
+
+.site-header {
+  background-color: $color__background-header;
+  opacity: 0.8;
+  //position: fixed;
+}
 
 #masthead {
   .row {
@@ -25,6 +42,9 @@
   }
 }
 
+////////////////////////////
+//    Footer (général)    //
+////////////////////////////
 #hero {
   .row {
     height: 350px;
@@ -43,7 +63,6 @@
   }
 }
 
-// Footer
 footer {
     background-color: $color__background-footer;
     color: $color__text-footer;
@@ -62,40 +81,28 @@ footer {
     }
 }
 
-.card{
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem auto;
-}
+////////////////////////////////
+// Main : background & border //
+////////////////////////////////
 
-.post{
-  margin-left: 1rem;
-  text-align: left;
-  margin-right: 1rem;
-}
-
-.container-blog{
-  max-width: 720px;
-  margin: 0 auto;
-  margin-top: 100px!important;
-  margin-bottom: 100px!important;
-}
+// Pattern de fond des pages (légumes - selon la saison !!!)
 
 .site-content{
-  background-image: url("../../uploads/2019/04/pattern-legumes.png");
+  background-image: url("../../uploads/2019/04/pattern_vert-150x150.png");
   background-repeat: repeat;
-  z-index: 1;
+  // opacity: 0.5; // Problème: la propriété opacity s'étend à tous les enfants...
 }
 
-// Encadrement du main de chaque page
+// Double bordure du main de chaque page
 
 .site-main{
+  opacity:1;
   // pour masquer les légumes du fond
   background-color: $color__background-body;
   // pour le positionnnement du titre (voir ci-dessous)
   text-align: center;
   // pour la bordure double
-  margin: 3rem 5rem;
+  margin: 6rem 5rem 4rem;
   border: solid 1px $color__primary;
   padding: .5rem;
 }
@@ -104,11 +111,41 @@ footer {
   padding: 1rem 2rem;
 }
 
+//////////////////////////////
+// Blogue (archive, single) //
+//////////////////////////////
+
+// Excerpt.php
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
 .card-image{
   img{
-    width: 300px!important;
-    height: 300px!important;
+    max-width: 300px !important;
     max-width: none;
+  }
+}
+
+.post{
+  margin-left: 1rem;
+  text-align: left;
+  // margin-right: 1rem;
+  h4{
+    color: $color__black;
+    a{
+      text-decoration: none !important;
+      text-decoration-color: $color__black !important;
+      &:hover{
+        opacity: .5 !important;
+      }
+      &:visited{
+        text-decoration: none !important;
+      }
+    }
   }
 }
 
@@ -117,6 +154,8 @@ footer {
     text-transform: uppercase!important;
   }
 }
+
+// content.php
 
 .article-blog {
 	display: flex;
@@ -170,6 +209,7 @@ footer {
 .paragraphe-blog{
   p{
   text-align: center;
+  font-style: italic;
   }
 }
 
@@ -181,6 +221,12 @@ footer {
   }
 }
 
+// .container-blog{
+//   max-width: 720px;
+//   margin: 0 auto;
+//   margin-top: 100px!important;
+//   margin-bottom: 100px!important;
+// }
 #primary-menu {
   float: right;
 }
@@ -189,4 +235,3 @@ footer {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
 }
-
