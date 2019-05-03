@@ -32,14 +32,35 @@
   opacity: 0.8;
   //position: fixed;
 
+#masthead {
   .row {
-    @extend .p1;
+   
+    background-color: rgba($color__background-header,.85);
+   
+    //position: fixed;
   }
 }
 
 ////////////////////////////
 //    Footer (général)    //
 ////////////////////////////
+#hero {
+  .row {
+    height: 350px;
+    padding: 0;
+  }
+  .col:nth-child(1) {
+  // background-image: url(../../uploads/2019/04/pattern-legumes.png);
+  background-color: rgba( $color__primary, .85 )
+  }
+  .col:nth-child(2) {
+    background-image: url('http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/pommes3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
+  }
+}
 
 footer {
     background-color: $color__background-footer;
@@ -205,3 +226,13 @@ footer {
 //   margin-top: 100px!important;
 //   margin-bottom: 100px!important;
 // }
+#primary-menu {
+  float: right;
+}
+
+.custom-logo-link {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+}
