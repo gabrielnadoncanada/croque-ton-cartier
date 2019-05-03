@@ -59,6 +59,18 @@
 			</nav><!-- #site-navigation -->
 			
 		</div>
+
+		<div id="hero">
+			<div class="row">
+				<div class="col">
+					
+				</div>
+				<div class="col">
+				
+				</div>
+			</div>
+		</div>
+		
 		
 		
 	</header><!-- #masthead -->
