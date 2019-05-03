@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="second-border">
-				
+
 				<header class="entry-header">
 					<h1 class="page-title">Blogue</h1>
 				</header>
@@ -55,7 +55,7 @@ get_header();
 			</div><!-- second-border -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
-</div>
+</div><!-- container -->
 
 <?php
 get_sidebar();

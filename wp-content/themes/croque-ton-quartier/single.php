@@ -9,9 +9,10 @@
 
 get_header();
 ?>
-
+<div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<div class="second-border">
 
 		<?php
 		while ( have_posts() ) :
@@ -26,8 +27,10 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 
+			</div><!-- second-border -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div><!-- container -->
 
 <?php
 get_sidebar();
