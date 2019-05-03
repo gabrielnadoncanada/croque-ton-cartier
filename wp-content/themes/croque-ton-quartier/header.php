@@ -62,7 +62,7 @@
 			</nav><!-- #site-navigation -->
 			
 		</div>
-
+				
 		<div class="links" id="hero">
 			<div class="row">
 				<div class="links__left">
@@ -72,7 +72,7 @@
   				</div> 
   				<div class="links__right">
      				<div class="links__right__skew">
-       					<div class="links__right__skew__img"></div>
+       					<div class="links__right__skew__img" style="background-image: url(<?php the_field('secondary_box_background')?>"></div>
    					</div>
   				</div> 
 			</div>
