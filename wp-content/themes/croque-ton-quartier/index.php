@@ -17,7 +17,9 @@ get_header();
 <div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-				<header>
+			<div class="second-border">
+				
+				<header class="entry-header">
 					<h1 class="page-title">Blogue</h1>
 				</header>
 				<div class="paragraphe-blog">
@@ -50,6 +52,7 @@ get_header();
 
 		endif;
 		?>
+			</div><!-- second-border -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>

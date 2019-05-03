@@ -119,12 +119,13 @@ footer {
   text-align: center;
   // pour la bordure double
   margin: 3rem 5rem;
-  border-width: 4px;
-  border-style: double;
-  border-color: $color__primary;
+  border: solid 1px $color__primary;
+  padding: .5rem;
+}
+.second-border{
+  border: solid 1px $color__primary;
   padding: 1rem 2rem;
 }
-// test pour push
 
 .card-image{
   img{
