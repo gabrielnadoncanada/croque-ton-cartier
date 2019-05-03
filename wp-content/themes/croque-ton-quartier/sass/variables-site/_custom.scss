@@ -99,17 +99,69 @@ footer {
   opacity:1;
   // pour masquer les légumes du fond
   background-color: $color__background-body;
-  // pour le positionnnement du titre (voir ci-dessous)
+  // pour le positionnnement du titre (voir _headings.scss)
   text-align: center;
   // pour la bordure double
   margin: 6rem 5rem 4rem;
   border: solid 1px $color__primary;
   padding: .5rem;
 }
+
 .second-border{
   border: solid 1px $color__primary;
   padding: 1rem 2rem;
 }
+
+//////////////////////////////
+//  Page d'accueil (grille) //
+//////////////////////////////
+
+ 
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  &:nth-child(1),
+  &:nth-child(4){
+    background-color: $color__bgd-grid-dark;
+  }
+  &:nth-child(2),
+  &:nth-child(3){
+    background-color: $color__bgd-grid-light;
+  }
+  img{
+    color: $color__primary;
+  }
+  h2{
+    color: $color__primary;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-style: normal;
+  }
+  p{
+    color: $color__text-main;
+    text-align: center;
+    font-size: .8em;
+    margin-bottom: 1em;
+  }
+  a{
+    color: $color__text-main;
+    text-decoration: none;
+    padding-bottom: .25em;
+    border-bottom: solid 2px $color__primary;
+  }
+}
+
 
 //////////////////////////////
 // Blogue (archive, single) //
