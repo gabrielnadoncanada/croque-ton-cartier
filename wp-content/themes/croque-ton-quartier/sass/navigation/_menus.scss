@@ -11,7 +11,7 @@
 		padding-left: 0;
 
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			
 			float: left;
 			position: absolute;
 			top: 100%;
@@ -37,6 +37,7 @@
 
 			:hover > a,
 			.focus > a {
+				
 			}
 
 			a:hover,
@@ -53,12 +54,14 @@
 	li {
 		float: left;
 		position: relative;
-		@extend .p1;
-		background: linear-gradient( $color__primary, $color__black );
-		border: 1px solid $color__black;
+		margin-right: 1rem;
+		background-color: $color__primary;
+		// background: linear-gradient( $color__primary, $color__black );
+		// border: 1px solid $color__black;
 		
 		&:hover > a,
 		&.focus > a {
+			background-color: darken($color__primary,10%);
 		}
 	}
 
@@ -66,12 +69,14 @@
 		display: block;
 		text-decoration: none;
 		color: $color__white;
+		padding: 0.5rem 1rem;
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		background-color: darken($color__primary,10%);
 	}
 }
 
