@@ -1051,6 +1051,7 @@ footer {
 .date-title {
   background-color: #964b00 !important;
   width: -moz-fit-content;
+  width: fit-content;
   color: white;
   padding: 0.50rem; }
 
