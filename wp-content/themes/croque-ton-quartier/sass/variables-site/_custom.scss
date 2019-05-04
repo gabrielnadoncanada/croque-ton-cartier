@@ -46,9 +46,7 @@
   .col:nth-child(2) {
     background-image: url('http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/pommes3.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-
-   
+    background-size: cover;   
   }
 }
 
@@ -77,7 +75,7 @@ footer {
 // Pattern de fond des pages (légumes - selon la saison !!!)
 
 .site-content{
-  background-image: url("../../uploads/2019/04/pattern-legumes.png");
+  background-image: url("../../uploads/2019/04/pattern_vert-150x150.png");
   background-repeat: repeat;
   // opacity: 0.5; // Problème: la propriété opacity s'étend à tous les enfants...
 }
