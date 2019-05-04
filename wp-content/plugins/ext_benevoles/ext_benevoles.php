@@ -19,7 +19,7 @@ function ajout_post_benevoles()
         'view_item' => "Voir le bénévole",
         'search_items' => "Chercher un bénévole",
         'not_found' =>  "Aucun bénévole trouvé",
-        'menu_name' => "Nos bénévoles"
+        'menu_name' => "Bénévoles"
     );
 
     $argBenevoles = array(

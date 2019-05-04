@@ -20,7 +20,7 @@ function ajout_post_activite(){
     'view_item' => "Voir l'activité",
     'search_items' => "Chercher une activité",
     'not_found' =>  "Aucune activité trouvé",
-    'menu_name' => "Mes activités"
+    'menu_name' => "Activités"
 );
 
   $argActivite = array(
@@ -29,7 +29,7 @@ function ajout_post_activite(){
     'has_archive' => true,
     'hierarchical' => true,
     'menu_position' => 20,
-    'menu_icon' => 'dashicons-carrot',
+    'menu_icon' => 'dashicons-admin-customizer',
     'supports' => array('title', 'thumbnail', 'editor', 'revisions', 'page-attributes')
 );
   register_post_type('activites', $argActivite);
