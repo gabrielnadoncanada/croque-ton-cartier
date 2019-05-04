@@ -66,6 +66,19 @@
 			width: <?php the_field('progress',43); ?>%;
 			background-color: rgba(0,0,0,0.8);
 		}
+
+		.links__left__skew::before {
+			content: "";
+			background: url('http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/05/croque_pattern.png') repeat, rgba(189, 105, 130,0.3);
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			z-index: 2;
+    		
+    	
+  		}
 	</style>
 
 	<?php wp_head(); ?>
