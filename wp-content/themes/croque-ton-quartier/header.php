@@ -22,8 +22,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 	<?php wp_head(); ?>
+	<style type="text/css">
+
+		.secondary_box_background {
+			background-image: url("<?php the_field('secondary_box_background',43);?>");
+		} 
+		.main-navigation ul li,
+		.main-navigation .current_page_item>a,
+		.main-navigation .current-menu-item>a,
+		.links__left__skew__img,
+		.entry-header h1, .entry-header h1.entry-tile,
+		footer
+		 {
+    			background-color: <?php the_field('main_color',43)?>;
+		  }
+		
+		  .second-border,
+		  .site-main {
+			border: solid 1px <?php the_field('main_color',43)?>;
+		  }
+		 
+		  
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,7 +53,7 @@
 
 	<header id="masthead" class="site-header">
 		
-		<div class="row">
+		<div class="nav-container row">
             <div class="site-branding col">
 				<?php
 				the_custom_logo();
@@ -62,21 +83,21 @@
 			</nav><!-- #site-navigation -->
 			
 		</div>
-
-		<div id="hero">
-			<div class="row">
-				<div class="col">
-					
-				</div>
-				<div class="col">
 				
-				</div>
+		<div class="links" id="hero">
+			<div class="row">
+				<div class="links__left">
+					<div class="links__left__skew">
+						<div class="links__left__skew__img"></div>
+    				</div>
+  				</div> 
+  				<div class="links__right">
+     				<div class="links__right__skew">
+       					<div class="links__right__skew__img secondary_box_background" "></div>
+   					</div>
+  				</div> 
 			</div>
 		</div>
-		
-		
-		
 	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
 	
