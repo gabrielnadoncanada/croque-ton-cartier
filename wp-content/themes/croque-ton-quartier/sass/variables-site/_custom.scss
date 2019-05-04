@@ -149,6 +149,39 @@ footer {
   }
 }
 
+/////////////////////////////////////////////////
+//       Page d'accueil: bandeau Facebook      //
+/////////////////////////////////////////////////
+
+.facebook{
+  display: flex;
+  justify-content: center;
+  margin: 0 5rem;
+  .poivron{
+    background-image: url("../../uploads/2019/05/piment.svg");
+  }
+  .flex-colonne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .bouton-fb{
+      padding: 1rem 2rem;
+      border-radius: .5rem;
+      background-color: blue;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+
+
+
 //////////////////////////////
 // Blogue (archive, single) //
 //////////////////////////////
