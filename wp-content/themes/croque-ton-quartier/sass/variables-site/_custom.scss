@@ -148,7 +148,6 @@ footer {
   }
 }
 
-
 //////////////////////////////
 // Blogue (archive, single) //
 //////////////////////////////
@@ -310,3 +309,36 @@ body.automne {
 body.hiver {
 
 }
+
+//////////////////////////////
+//   Histoire : bénévoles   //
+//////////////////////////////
+
+.benevoles{
+  background-color: white;
+  .img-border{
+    border: solid 4px $color__border-benevole;
+    background-color: $color__background-benevole;
+    img{
+      vertical-align: bottom;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: flex-end;
+    }
+  }
+  h2{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+  h3{
+    font-size: 1em;
+    font-weight: 700;
+  }
+  p{
+    margin-top: .5rem;
+    font-weight: normal;
+  }
+}
+

@@ -23,54 +23,51 @@ get_header();
           while ( have_posts() ) :
             the_post();
             get_template_part( 'template-parts/excerpt', 'page' );
-          endwhile; // End of the loop.
         ?>
 
 			</div><!-- second-border -->		
     </main><!-- #main -->
     
+<!-- Deuxième partie : le texte et photos au complet  -->
 
-    
-	</div><!-- #primary -->
-</div><!-- container -->
+    <?php
+        get_template_part( 'template-parts/content', 'page' );
+      endwhile; // End of the loop.
+    ?>
 
 <!-- Troisième partie: les bénévoles  -->
 
-<section class="grille_benevoles">
-	<?php 
-		$args1 = array(
-			'post_type' => 'benevole',
-			'posts_per_page' => 4
-		);
-		$benevoles = new WP_Query( $args1 );
-			
-		if ( $benevoles->have_posts() ) :
-			?>
-			<section id="grille-menu">
-				<div class="grid-container">
-				<!-- /* Start the Loop */ -->
-					<?php
-						while ( $benevoles->have_posts() ) :
-							$benevoles->the_post();
+    <section id="benevoles">
+      <?php 
+        $args1 = array(
+          'post_type' => 'benevole',
+          'posts_per_page' => 4
+        );
+        $benevoles = new WP_Query( $args1 );
+          
+        if ( $benevoles->have_posts() ) :
+      ?>
+        <div class="row justify-content-between">
+        <!-- /* Start the Loop */ -->
+          <?php
+            while ( $benevoles->have_posts() ) :
+              $benevoles->the_post();
 
-							get_template_part( 'template-parts/excerpt', get_post_type() );
+              get_template_part( 'template-parts/excerpt', get_post_type() );
 
-						endwhile; // End of the loop.
-					?>
-				</div>
-			</section>
+            endwhile; // End of the loop.
+          ?>
+        </div>
+      <?php
+        else :        
+          get_template_part( 'template-parts/content', 'none' );
+        endif;
+        wp_reset_postdata();
+      ?>
+    </section>
 
-		<?php
-		else :        
-			get_template_part( 'template-parts/content', 'none' );
-		endif;
-		wp_reset_postdata();
-	?>
-</section>
-
-
-<!-- Troisème partie : lien Facebook de la page d'accueil:  -->
-
+  </div><!-- #primary -->
+</div><!-- container -->
 
 <?php
 get_sidebar();
