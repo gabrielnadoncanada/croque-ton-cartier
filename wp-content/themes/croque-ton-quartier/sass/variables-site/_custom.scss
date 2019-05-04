@@ -46,12 +46,12 @@
   .col:nth-child(2) {
     background-image: url('http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/pommes3.jpg');
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
   }
 }
 
 footer {
-   
+
     color: $color__text-footer;
 
     .row {
@@ -259,6 +259,19 @@ footer {
   }
 }
 
+.wp-paginate.wpp-modern-grey {
+  a{
+    border-radius: 0!important;
+    //padding: 0!important;
+    background-color: #964b00!important;
+  }
+  span{
+    border-radius: 0!important;
+    //padding: 0!important;
+    background-color: #964b00!important;
+  }
+}
+
 // .container-blog{
 //   max-width: 720px;
 //   margin: 0 auto;
@@ -285,15 +298,15 @@ body.printemps {
 
 // Été
 body.ete {
-  
+
 }
 
 // Automne
 body.automne {
-  
+
 }
 
 // Hiver
 body.hiver {
-  
+
 }
