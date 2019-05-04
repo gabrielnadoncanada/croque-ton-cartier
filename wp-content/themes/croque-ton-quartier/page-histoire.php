@@ -19,43 +19,39 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="second-border">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			// if ( comments_open() || get_comments_number() ) :
-			// 	comments_template();
-			// endif;
-
-		endwhile; // End of the loop.
-		?>
+        <?php
+          while ( have_posts() ) :
+            the_post();
+            get_template_part( 'template-parts/excerpt', 'page' );
+          endwhile; // End of the loop.
+        ?>
 
 			</div><!-- second-border -->		
-		</main><!-- #main -->
+    </main><!-- #main -->
+    
+
+    
 	</div><!-- #primary -->
 </div><!-- container -->
 
-<!-- Deuxième partie : grille-menu de la page d'accueil:  -->
+<!-- Troisième partie: les bénévoles  -->
 
-<section class="grille_de_menu">
+<section class="grille_benevoles">
 	<?php 
 		$args1 = array(
-			'post_type' => 'menuGrid',
+			'post_type' => 'benevole',
 			'posts_per_page' => 4
 		);
-		$grilleDeMenu = new WP_Query( $args1 );
+		$benevoles = new WP_Query( $args1 );
 			
-		if ( $grilleDeMenu->have_posts() ) :
+		if ( $benevoles->have_posts() ) :
 			?>
 			<section id="grille-menu">
 				<div class="grid-container">
 				<!-- /* Start the Loop */ -->
 					<?php
-						while ( $grilleDeMenu->have_posts() ) :
-							$grilleDeMenu->the_post();
+						while ( $benevoles->have_posts() ) :
+							$benevoles->the_post();
 
 							get_template_part( 'template-parts/excerpt', get_post_type() );
 
