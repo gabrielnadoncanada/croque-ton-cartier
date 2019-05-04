@@ -7,12 +7,9 @@ $colorPri: $color__primary;
 .links {
   width: 100%;
   height: 30em;
-  
-
   .links__left__skew {
     background: $colorPri;
   }
-
   &__left, &__right {
     position: relative;
     width: 50%;
@@ -44,19 +41,14 @@ $colorPri: $color__primary;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  
-  
 }
 
 .links__left__skew__img {
   right: -$overhang / 1.5;
- 
-  background: $colorPri url(http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/05/croque_pattern.png);
 }
 
 .links__right__skew__img {
   left: -$overhang / 1.5;
- 
 }
 
 @media (max-width: 600px) {
