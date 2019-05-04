@@ -219,3 +219,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Pour afficher des résumés (excerpt) des pages
 add_post_type_support( 'page', 'excerpt' );
+
+// Add the filter to manage the p tags
+// Source: https://wordpress.stackexchange.com/questions/109481/remove-p-tags-from-the-content
+remove_filter('the_excerpt', 'wpautop');

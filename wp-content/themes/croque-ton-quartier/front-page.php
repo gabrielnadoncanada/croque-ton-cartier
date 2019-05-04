@@ -70,6 +70,21 @@ get_header();
 
 <!-- Troisème partie : lien Facebook de la page d'accueil:  -->
 
+<div class="container">
+	<div id="primary" class="content-area">
+
+	<div flex-center>
+		<div class="poivron">
+			<img src="upload" alt="">
+		</div>
+		<div class="flex-colonne">
+			<h2>Rejoignez-nous sur Facebook et ne manquez aucune actualité</h2>
+			<a href="facebook" class="bouton-fb"></a>
+		</div>
+	</div>
+
+</div><!-- #primary -->
+</div><!-- container -->
 
 <?php
 get_sidebar();
