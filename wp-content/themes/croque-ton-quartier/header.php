@@ -25,7 +25,7 @@
 
 	<style type="text/css">
 		.secondary_box_background {
-			background-image: url("<?php the_field('secondary_box_background',43);?>");
+			background-image: url("<?php the_field('box_background',43);?>");
 		} 
 		.main-navigation ul li,
 		.main-navigation .current_page_item>a,
