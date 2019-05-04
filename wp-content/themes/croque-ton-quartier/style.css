@@ -358,8 +358,7 @@ textarea {
   font-size: 1rem;
   line-height: 1.5; }
 
-.entry-content + p,
-.paragraphe-blog + p {
+.entry-content p:first-child {
   font-weight: 300;
   font-style: italic; }
 
@@ -885,11 +884,10 @@ footer {
       color: #cccccc; }
 
 .site-content {
-  background-image: url("../../uploads/2019/04/pattern_vert-150x150.png");
+  background-image: url("../../uploads/2019/04/croque_pattern.png");
   background-repeat: repeat; }
 
 .site-main {
-  opacity: 1;
   background-color: #fff;
   text-align: center;
   margin: 6rem 5rem 4rem;
@@ -1015,6 +1013,25 @@ footer {
 .custom-logo-link {
   margin-left: 0.5rem;
   margin-top: 0.5rem; }
+
+.benevoles {
+  background-color: white; }
+  .benevoles .img-border {
+    border: solid 4px #325720;
+    background-color: #80aa68; }
+    .benevoles .img-border img {
+      vertical-align: bottom; }
+  .benevoles h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: .5rem; }
+  .benevoles h3 {
+    font-size: 1em;
+    font-weight: 700; }
+  .benevoles p {
+    margin-top: .5rem;
+    font-weight: normal; }
 
 .links {
   width: 100%;
