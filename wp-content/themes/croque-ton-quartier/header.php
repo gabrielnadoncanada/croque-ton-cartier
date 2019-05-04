@@ -40,6 +40,32 @@
 		.site-main {
 			border: solid 1px <?php the_field('main_color',43)?>;
 		  }
+		  .acf-map {
+			width: 100%;
+			height: 400px;
+			border: #ccc solid 1px;
+			margin: 20px 0;
+		}
+		input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+			color: #666;
+			border: 1px solid <?php the_field('main_color',43)?>;
+			border-radius: 3px;
+			padding: 3px;
+		}
+		/* fixes potential theme css conflict */
+		.acf-map img {
+		max-width: inherit !important;
+		}  
+
+		.bar {
+			height: 50px;
+			background-color: rgba(0,0,0,0.4);
+		}
+		.progress {
+			height: 100%;
+			width: <?php the_field('progress',43); ?>%;
+			background-color: rgba(0,0,0,0.8);
+		}
 	</style>
 
 	<?php wp_head(); ?>
@@ -87,6 +113,13 @@
 			<div class="links" id="hero">
 				<div class="row">
 					<div class="links__left">
+						<div class="slogan">
+							<h4><?php the_field('slogan',43); ?></h4>
+							<div class="bar">
+								<div class="progress"></div>
+							</div>
+							<p><?php the_field('progress',43); ?>%</p>
+						</div>	
 						<div class="links__left__skew">
 							<div class="links__left__skew__img"></div>
 						</div>

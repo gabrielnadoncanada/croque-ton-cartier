@@ -170,7 +170,7 @@ function croque_ton_quartier_scripts() {
 	wp_enqueue_script( 'croque-ton-quartier-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'croque-ton-quartier-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	wp_enqueue_script( 'croque-ton-quartier-map', get_template_directory_uri() . '/js/googlemaps.js' );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -223,3 +223,11 @@ add_post_type_support( 'page', 'excerpt' );
 // Add the filter to manage the p tags
 // Source: https://wordpress.stackexchange.com/questions/109481/remove-p-tags-from-the-content
 remove_filter('the_excerpt', 'wpautop');
+
+
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyD-ehZGzI8PQyKWFfzq6Q4X2nzi61MuP7E');
+}
+
+add_action('acf/init', 'my_acf_init');

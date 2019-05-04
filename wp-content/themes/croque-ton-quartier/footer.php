@@ -25,6 +25,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ehZGzI8PQyKWFfzq6Q4X2nzi61MuP7E&callback=initMap">
+  </script>
 </body>
 </html>
