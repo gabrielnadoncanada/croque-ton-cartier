@@ -28,7 +28,12 @@
 ////////////////////////////
 
 .nav-container {
-  background-color: rgba($color__background-header,.85);
+  background-color: rgba($color__background-header,.65);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 ////////////////////////////
