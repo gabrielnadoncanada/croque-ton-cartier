@@ -217,5 +217,5 @@ function custom_excerpt_length( $length ) {
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-
-
+// Pour afficher des résumés (excerpt) des pages
+add_post_type_support( 'page', 'excerpt' );

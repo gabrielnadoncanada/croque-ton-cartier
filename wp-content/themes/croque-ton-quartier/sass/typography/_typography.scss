@@ -10,8 +10,7 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
-.entry-content + p,
-.paragraphe-blog + p{
+.entry-content p:first-child{
 	font-weight: 300;
 	font-style: italic;
 }

@@ -75,7 +75,7 @@ footer {
 // Pattern de fond des pages (légumes - selon la saison !!!)
 
 .site-content{
-  background-image: url("../../uploads/2019/04/pattern_vert-150x150.png");
+  background-image: url("../../uploads/2019/04/croque_pattern.png");
   background-repeat: repeat;
   // opacity: 0.5; // Problème: la propriété opacity s'étend à tous les enfants...
 }
@@ -83,7 +83,7 @@ footer {
 // Double bordure du main de chaque page
 
 .site-main{
-  opacity:1;
+  // opacity:1;
   // pour masquer les légumes du fond
   background-color: $color__background-body;
   // pour le positionnnement du titre (voir _headings.scss)
@@ -99,10 +99,9 @@ footer {
   padding: 1rem 2rem;
 }
 
-//////////////////////////////
-//  Page d'accueil (grille) //
-//////////////////////////////
-
+/////////////////////////////////////////////////
+//  Page d'accueil (grille de menu - 4 carrés) //
+/////////////////////////////////////////////////
  
 .grid-container{
   display: grid;

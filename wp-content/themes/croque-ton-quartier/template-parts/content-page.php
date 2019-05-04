@@ -18,7 +18,7 @@
 
 	<div class="entry-content">
 		<?php
-the_content();
+the_post();
 
 wp_link_pages(array(
     'before' => '<div class="page-links">' . esc_html__('Pages:', 'croque-ton-quartier'),
