@@ -22,9 +22,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<?php wp_head(); ?>
-	<style type="text/css">
 
+	<style type="text/css">
 		.secondary_box_background {
 			background-image: url("<?php the_field('secondary_box_background',43);?>");
 		} 
@@ -34,70 +33,72 @@
 		.links__left__skew__img,
 		.entry-header h1, .entry-header h1.entry-tile,
 		footer
-		 {
-    			background-color: <?php the_field('main_color',43)?>;
-		  }
-		
-		  .second-border,
-		  .site-main {
+		{
+			background-color: <?php the_field('main_color',43)?>;
+		}
+		.second-border,
+		.site-main {
 			border: solid 1px <?php the_field('main_color',43)?>;
 		  }
-		 
-		  
 	</style>
+
+	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'croque-ton-quartier' ); ?></a>
+<body <?php body_class(); ?> >
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'croque-ton-quartier' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		
-		<div class="nav-container row">
-            <div class="site-branding col">
-				<?php
-				the_custom_logo();
-				if ( is_front_page() && is_home() ) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-				endif;
-				$croque_ton_quartier_description = get_bloginfo( 'description', 'display' );
-				if ( $croque_ton_quartier_description || is_customize_preview() ) :
-					?>
-					<p class="site-description"><?php echo $croque_ton_quartier_description; /* WPCS: xss ok. */ ?></p>
-				<?php endif; ?>
-			</div><!-- .site-branding -->
-			<nav id="site-navigation" class="main-navigation col">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'croque-ton-quartier' ); ?></button>
-				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				) );
-				?>
-			</nav><!-- #site-navigation -->
+		<header id="masthead" class="site-header">
 			
-		</div>
+			<div class="nav-container row">
+
+				<div class="site-branding col">
+					<?php
+					the_custom_logo();
+					if ( is_front_page() && is_home() ) :
+						?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						<?php
+					else :
+						?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<?php
+					endif;
+					$croque_ton_quartier_description = get_bloginfo( 'description', 'display' );
+					if ( $croque_ton_quartier_description || is_customize_preview() ) :
+						?>
+						<p class="site-description"><?php echo $croque_ton_quartier_description; /* WPCS: xss ok. */ ?></p>
+					<?php endif; ?>
+				</div><!-- .site-branding -->
+
+				<nav id="site-navigation" class="main-navigation col">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'croque-ton-quartier' ); ?></button>
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					) );
+					?>
+				</nav><!-- #site-navigation -->
 				
-		<div class="links" id="hero">
-			<div class="row">
-				<div class="links__left">
-					<div class="links__left__skew">
-						<div class="links__left__skew__img"></div>
-    				</div>
-  				</div> 
-  				<div class="links__right">
-     				<div class="links__right__skew">
-       					<div class="links__right__skew__img secondary_box_background" "></div>
-   					</div>
-  				</div> 
+			</div><!-- nav-container -->
+					
+			<div class="links" id="hero">
+				<div class="row">
+					<div class="links__left">
+						<div class="links__left__skew">
+							<div class="links__left__skew__img"></div>
+						</div>
+					</div> 
+					<div class="links__right">
+						<div class="links__right__skew">
+								<div class="links__right__skew__img secondary_box_background" "></div>
+						</div>
+					</div> 
+				</div>
 			</div>
-		</div>
-	</header><!-- #masthead -->
-	<div id="content" class="site-content">
-	
+		</header><!-- #masthead -->
+
+		<div id="content" class="site-content">
+		
