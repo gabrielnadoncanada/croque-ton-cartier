@@ -24,34 +24,13 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<style type="text/css">
-		.secondary_box_background {
-			background-image: url("<?php the_field('box_background',43);?>");
-		} 
-		.main-navigation ul li,
-		.main-navigation .current_page_item>a,
-		.main-navigation .current-menu-item>a,
-		.links__left__skew__img,
-		.entry-header h1, .entry-header h1.entry-tile,
-		footer
-		{
-			background-color: <?php the_field('main_color',43)?>;
-		}
-		.second-border,
-		.site-main {
-			border: solid 1px <?php the_field('main_color',43)?>;
-		  }
-		  .acf-map {
+		.acf-map {
 			width: 100%;
 			height: 400px;
 			border: #ccc solid 1px;
 			margin: 20px 0;
 		}
-		input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
-			color: #666;
-			border: 1px solid <?php the_field('main_color',43)?>;
-			border-radius: 3px;
-			padding: 3px;
-		}
+		
 		/* fixes potential theme css conflict */
 		.acf-map img {
 		max-width: inherit !important;
@@ -84,7 +63,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> >
+<body <?php body_class(get_field('main_color'));?> >
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'croque-ton-quartier' ); ?></a>
 
