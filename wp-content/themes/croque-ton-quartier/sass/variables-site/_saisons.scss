@@ -20,6 +20,14 @@ body.printemps {
         background-color: $color__var-printemps;
     }
 
+    .main-navigation ul li {
+        &:hover > a,
+		&.focus > a {
+			background-color: darken($color__var-printemps,10%);
+        }
+    }
+    
+        
     .secondary_box_background {
         background-image: url(../../uploads/2019/04/spring4.jpg);
     } 
@@ -62,6 +70,13 @@ body.ete {
     footer
     {
         background-color: $color__var-ete;
+    }
+
+    .main-navigation ul li {
+        &:hover > a,
+		&.focus > a {
+			background-color: darken($color__var-ete,10%);
+        }
     }
 
     .secondary_box_background {
@@ -108,6 +123,13 @@ body.automne {
         background-color: $color__var-automne;
     }
 
+    .main-navigation ul li {
+        &:hover > a,
+		&.focus > a {
+			background-color: darken($color__var-automne,10%);
+        }
+    }
+
     .secondary_box_background {
         background-image: url(../../uploads/2019/04/pumpkin.jpg);
     } 
@@ -149,6 +171,13 @@ body.hiver {
     footer
     {
         background-color: $color__var-hiver;
+    }
+
+    .main-navigation ul li {
+        &:hover > a,
+		&.focus > a {
+			background-color: darken($color__var-hiver,10%);
+        }
     }
 
     .secondary_box_background {
