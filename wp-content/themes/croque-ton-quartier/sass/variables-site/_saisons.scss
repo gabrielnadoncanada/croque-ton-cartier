@@ -173,6 +173,15 @@ body.hiver {
         a{
             border-bottom: solid 2px $color__var-hiver;
         }
+        &:nth-child(1),
+        &:nth-child(4){
+          background-color: lighten($color__var-hiver, 40%);
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+          background-color: lighten($color__var-hiver, 50%);
+        }
+      
     }
 
     .facebook{
