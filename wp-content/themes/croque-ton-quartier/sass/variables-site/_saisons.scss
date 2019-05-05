@@ -1,22 +1,121 @@
-// // Prograsmmation SASS, en fonction de variable du body ???
+////////////////////////////
+// Variations des saisons //
+////////////////////////////
 
-// .fall{
+$color__var-printemps: #ef7c4d;
+$color__var-ete: #4e8333;
+$color__var-automne: #984d13;
+$color__var-hiver: #2daae1;
 
-// }
 
-// .saison-title, // couleur de titre
-// .saison-color { // couleur de texte
-//   color: $saison-color;
-// }
+// Printemps
+body.printemps {
+    .main-navigation ul li,
+    .main-navigation .current_page_item>a,
+    .main-navigation .current-menu-item>a,
+    .links__left__skew__img,
+    .entry-header h1, .entry-header h1.entry-tile,
+    footer
+    {
+        background-color: $color__var-printemps;
+    }
 
-// .saison-bkgd-color {
-//   color: $saison-bkgd-color;
-// }
+    .secondary_box_background {
+        background-image: url(http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/spring4.jpg);
+    } 
 
-// .saison-pâle {
+    .second-border, .site-main {
+		border: solid 1px $color__var-printemps;
+    }
+    
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+        color: #666;
+        border: 1px solid $color__var-printemps;
+        border-radius: 3px;
+        padding: 3px;
+    }
+}
 
-// }
+// Été
+body.ete {
+    .main-navigation ul li,
+    .main-navigation .current_page_item>a,
+    .main-navigation .current-menu-item>a,
+    .links__left__skew__img,
+    .entry-header h1, .entry-header h1.entry-tile,
+    footer
+    {
+        background-color: $color__var-ete;
+    }
 
-// .saison-focus-fonce {
+    .secondary_box_background {
+        background-image: url(http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/pommes3.jpg);
+    } 
 
-// }
+    .second-border, .site-main {
+		border: solid 1px $color__var-ete;
+    }
+    
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+        color: #666;
+        border: 1px solid $color__var-ete;
+        border-radius: 3px;
+        padding: 3px;
+    }
+}
+
+// Automne
+body.automne {
+    .main-navigation ul li,
+    .main-navigation .current_page_item>a,
+    .main-navigation .current-menu-item>a,
+    .links__left__skew__img,
+    .entry-header h1, .entry-header h1.entry-tile,
+    footer
+    {
+        background-color: $color__var-automne;
+    }
+
+    .secondary_box_background {
+        background-image: url(http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/pumpkin.jpg);
+    } 
+
+    .second-border, .site-main {
+		border: solid 1px $color__var-automne;
+    }
+    
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+        color: #666;
+        border: 1px solid $color__var-automne;
+        border-radius: 3px;
+        padding: 3px;
+    }
+}
+
+// Hiver
+body.hiver {
+    .main-navigation ul li,
+    .main-navigation .current_page_item>a,
+    .main-navigation .current-menu-item>a,
+    .links__left__skew__img,
+    .entry-header h1, .entry-header h1.entry-tile,
+    footer
+    {
+        background-color: $color__var-hiver;
+    }
+
+    .secondary_box_background {
+        background-image: url(http://localhost/wordpress/croque-ton-cartier/wp-content/uploads/2019/04/winter.jpg);
+    } 
+
+    .second-border, .site-main {
+		border: solid 1px $color__var-hiver;
+    }
+    
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+        color: #666;
+        border: 1px solid $color__var-hiver;
+        border-radius: 3px;
+        padding: 3px;
+    }
+}
