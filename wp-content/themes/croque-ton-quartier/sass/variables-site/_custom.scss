@@ -211,15 +211,12 @@ footer {
     // margin-right: 1rem;
     a{
       text-decoration: none;
-      text-decoration-color: $color__black;
+      // text-decoration-color: $color__black;
       &:hover{
         opacity: .5;
       }
       &:visited{
         text-decoration: none;
-      }
-      h4{
-        color: $color__black;
       }
     }
     p{
@@ -303,25 +300,8 @@ footer {
   }
 }
 
-.wp-paginate.wpp-modern-grey {
-  a{
-    border-radius: 0!important;
-    //padding: 0!important;
-    background-color: #964b00!important;
-  }
-  span{
-    border-radius: 0!important;
-    //padding: 0!important;
-    background-color: #964b00!important;
-  }
-}
+// Menu du header
 
-// .container-blog{
-//   max-width: 720px;
-//   margin: 0 auto;
-//   margin-top: 100px!important;
-//   margin-bottom: 100px!important;
-// }
 #primary-menu {
   float: right;
 }
@@ -402,7 +382,6 @@ footer {
 }
 
 .date-title{
-  background-color: #964b00 !important;
   width: -moz-fit-content;
   width: fit-content;
   color: white;

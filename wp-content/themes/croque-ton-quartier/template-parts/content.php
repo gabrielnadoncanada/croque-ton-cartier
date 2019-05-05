@@ -51,7 +51,6 @@
 
 		<div class="article-content">
 			<?php $blogUrl = get_permalink( get_option('page_for_posts') );?>
-			<h2>Par : <?php the_author();?></h2>
 			<?php the_content();?>
 			<a href="<?php echo $blogUrl;?>" class="call-to-action">Retour au blogue</a>
 		</div>

@@ -43,12 +43,31 @@ body.printemps {
         padding: 3px;
     }
 
+    input[type="submit"],
+    button.menu-toggle,
+    h3.date-title{
+        background-color: darken($color__var-printemps, 20%);
+        border: 1px solid $color__var-printemps;
+        color: white !important;
+        font-size: 1.2em;
+        padding: .5rem 1rem; 
+        cursor: pointer;  
+    }
+
     .grid-card{
         h2{
             color: $color__var-printemps;
         }
         a{
             border-bottom: solid 2px $color__var-printemps;
+        }
+        &:nth-child(1),
+        &:nth-child(4){
+          background-color: lighten($color__var-printemps, 30%);
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+          background-color: lighten($color__var-printemps, 50%);
         }
     }
 
@@ -58,6 +77,26 @@ body.printemps {
         }
     }
 
+    // index.php
+    .card{
+        h4{
+            color: $color__var-printemps;
+          }    
+    } 
+
+    .wp-paginate.wpp-modern-grey {
+        a{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-printemps!important;
+        }
+        span{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-printemps!important;
+        }
+    }
+      
 }
 
 // Été
@@ -94,12 +133,27 @@ body.ete {
         padding: 3px;
     }
 
+    input[type="submit"],
+    button.menu-toggle,
+    h3.date-title{
+        background-color: darken($color__var-ete, 20%);
+        padding: .5rem 1rem;   
+    }
+
     .grid-card{
         h2{
             color: $color__var-ete;
         }
         a{
             border-bottom: solid 2px $color__var-ete;
+        }
+        &:nth-child(1),
+        &:nth-child(4){
+          background-color: lighten($color__var-ete, 30%);
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+          background-color: lighten($color__var-ete, 50%);
         }
     }
 
@@ -108,6 +162,27 @@ body.ete {
             background-image: url("../../uploads/2019/05/piment.svg");
         }
     }
+
+    // index.php
+    .card{
+        h4{
+            color: $color__var-ete;
+          }    
+    } 
+
+    .wp-paginate.wpp-modern-grey {
+        a{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-ete!important;
+        }
+        span{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-ete!important;
+        }
+    }
+
 
 }
 
@@ -144,6 +219,12 @@ body.automne {
         border-radius: 3px;
         padding: 3px;
     }
+    input[type="submit"],
+    button.menu-toggle,
+    h3.date-title{
+        background-color: darken($color__var-automne, 20%);
+        padding: .5rem 1rem;   
+    }
 
     .grid-card{
         h2{
@@ -152,11 +233,39 @@ body.automne {
         a{
             border-bottom: solid 2px $color__var-automne;
         }
+        &:nth-child(1),
+        &:nth-child(4){
+          background-color: lighten($color__var-automne, 30%);
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+          background-color: lighten($color__var-automne, 50%);
+        }
     }
 
     .facebook{
         .poivron{
             background-image: url("../../uploads/2019/05/citrouille.svg");
+        }
+    }
+
+    // index.php
+    .card{
+        h4{
+            color: $color__var-automne;
+          }    
+    } 
+
+    .wp-paginate.wpp-modern-grey {
+        a{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-automne!important;
+        }
+        span{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-automne!important;
         }
     }
 }
@@ -195,6 +304,13 @@ body.hiver {
         padding: 3px;
     }
 
+    input[type="submit"],
+    button.menu-toggle,
+    h3.date-title{
+        background-color: darken($color__var-hiver, 20%);
+        padding: .5rem 1rem;   
+    }
+
     .grid-card{
         h2{
             color: $color__var-hiver;
@@ -204,7 +320,7 @@ body.hiver {
         }
         &:nth-child(1),
         &:nth-child(4){
-          background-color: lighten($color__var-hiver, 40%);
+          background-color: lighten($color__var-hiver, 30%);
         }
         &:nth-child(2),
         &:nth-child(3){
@@ -218,4 +334,25 @@ body.hiver {
             background-image: url("../../uploads/2019/05/bonhomme-de-neige.svg");
         }
     }
+
+    // index.php
+    .card{
+        h4{
+            color: $color__var-hiver;
+          }    
+    } 
+
+    .wp-paginate.wpp-modern-grey {
+        a{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-hiver!important;
+        }
+        span{
+          border-radius: 0!important;
+          //padding: 0!important;
+          background-color: $color__var-hiver!important;
+        }
+    }
+
 }
