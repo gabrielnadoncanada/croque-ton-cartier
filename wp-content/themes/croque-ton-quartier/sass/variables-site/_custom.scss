@@ -32,8 +32,9 @@
 }
 
 ////////////////////////////
-//    Footer (général)    //
+//    Header (le hero)    //
 ////////////////////////////
+
 #hero {
   .row {
     height: 100%;
@@ -50,14 +51,15 @@
   }
 }
 
+////////////////////////////
+//    Footer (général)    //
+////////////////////////////
+
 footer {
-
     color: $color__text-footer;
-
     .row {
         @extend .p2;
     }
-
     a {
         color: $color__text-footer;
         text-decoration: none;
@@ -66,6 +68,14 @@ footer {
             color: darken( $color__text-footer, 20% );
         }
     }
+}
+
+// formulaire MailChimp
+
+.mc4wp-form-fields{
+  p{
+    margin: .5rem 0;
+  }
 }
 
 ////////////////////////////////
@@ -157,30 +167,36 @@ footer {
   display: flex;
   justify-content: center;
   margin: 0 5rem;
+  padding: 10rem 0 5rem;
   .poivron{
     background-image: url("../../uploads/2019/05/piment.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    width: 33.33%;
+    margin-top: -5rem;
   }
   .flex-colonne{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 66.67%;
+    text-align: left;
     h2{
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       font-weight: 700;
       text-align: center;
     }
     .bouton-fb{
+      margin-top: 1rem;
       padding: 1rem 2rem;
       border-radius: .5rem;
-      background-color: blue;
+      background-color: $color__background-facebook;
       color: white;
       text-transform: uppercase;
       font-weight: 700;
     }
   }
 }
-
-
 
 //////////////////////////////
 // Blogue (archive, single) //
@@ -192,38 +208,37 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 3rem auto;
-}
-
-.card-image{
-  img{
-    max-width: 300px !important;
-    max-width: none;
-  }
-}
-
-.post{
-  margin-left: 1rem;
-  text-align: left;
-  // margin-right: 1rem;
-  h4{
-    color: $color__black;
-    a{
-      text-decoration: none !important;
-      text-decoration-color: $color__black !important;
-      &:hover{
-        opacity: .5 !important;
-      }
-      &:visited{
-        text-decoration: none !important;
-      }
+  .card-image{
+    img{
+      // max-width: 300px !important;
     }
   }
-}
-
-.suite{
-  a{
-    text-transform: uppercase!important;
-  }
+  .post{
+    margin-left: 1rem;
+    text-align: left;
+    // margin-right: 1rem;
+    a{
+      text-decoration: none;
+      text-decoration-color: $color__black;
+      &:hover{
+        opacity: .5;
+      }
+      &:visited{
+        text-decoration: none;
+      }
+      h4{
+        color: $color__black;
+      }
+    }
+    .suite{
+      text-decoration-color: $color__black;
+      text-transform: uppercase;
+      padding: .5rem 0;
+    }
+    .card-date{
+      font-style: italic;
+    }    
+  }    
 }
 
 // content.php
@@ -335,29 +350,6 @@ footer {
 .menu-item a img {
   width: 20px;
 }
-////////////////////////////
-// Variations des saisons //
-////////////////////////////
-
-// Printemps
-body.printemps {
-
-}
-
-// Été
-body.ete {
-
-}
-
-// Automne
-body.automne {
-
-}
-
-// Hiver
-body.hiver {
-
-}
 
 //////////////////////////////
 //   Histoire : bénévoles   //
@@ -370,6 +362,7 @@ body.hiver {
     background-color: $color__background-benevole;
     img{
       vertical-align: bottom;
+      width:100%;
       // display: flex;
       // flex-direction: column;
       // align-items: flex-end;

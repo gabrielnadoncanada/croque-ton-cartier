@@ -207,7 +207,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Add various custom image size.
  */
-add_image_size( 'portrait-1', 715, 751, false );
+add_image_size( 'square-post', 150, 150, false );
 add_image_size( 'paysage-1', 1440, 751, false );
 add_image_size( 'portrait-2', 293, 351, false );
 

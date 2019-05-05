@@ -73,17 +73,16 @@ get_header();
 <div class="container">
 	<div id="primary" class="content-area">
 
-	<div class="facebook">
-		<div class="poivron">
-			<img src="upload" alt="">
+		<div class="facebook">
+			<div class="poivron">
+			</div>
+			<div class="flex-colonne">
+				<h2>Rejoignez-nous sur Facebook et ne manquez aucune actualité</h2>
+				<a href="https://www.facebook.com/CroqueTonQuartier/" class="bouton-fb">Cliquez ici</a>
+			</div>
 		</div>
-		<div class="flex-colonne">
-			<h2>Rejoignez-nous sur Facebook et ne manquez aucune actualité</h2>
-			<a href="https://www.facebook.com/CroqueTonQuartier/" class="bouton-fb">Cliquez ici</a>
-		</div>
-	</div>
 
-</div><!-- #primary -->
+	</div><!-- #primary -->
 </div><!-- container -->
 
 <?php
