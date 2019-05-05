@@ -140,7 +140,6 @@ footer {
   }
   h2{
     margin-top: 1rem;
-    color: $color__primary;
     text-transform: uppercase;
     font-size: 1.2em;
     font-style: normal;
@@ -155,7 +154,6 @@ footer {
     color: $color__text-main;
     text-decoration: none;
     padding-bottom: .25em;
-    border-bottom: solid 2px $color__primary;
   }
 }
 
@@ -169,7 +167,6 @@ footer {
   margin: 0 5rem;
   padding: 10rem 0 5rem;
   .poivron{
-    background-image: url("../../uploads/2019/05/piment.svg");
     background-repeat: no-repeat;
     background-position-x: right;
     width: 33.33%;
@@ -225,10 +222,14 @@ footer {
         color: $color__black;
       }
     }
-    .suite{
-      text-decoration-color: $color__black;
-      text-transform: uppercase;
-      padding: .5rem 0;
+    p{
+      display: block;
+      clear: both;
+      margin: .5rem 0;
+      .suite{
+        color: $color__black;
+        text-transform: uppercase;
+      }  
     }
     .card-date{
       font-style: italic;

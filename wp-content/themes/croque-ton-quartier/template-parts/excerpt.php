@@ -11,7 +11,9 @@
       <h4><?php the_title();?></h4>
     </a>
     <?php the_excerpt();?>
-    <a class="suite" href="<?php echo get_permalink();?>">Lire la suite</a>
+    <p>
+      <a class="suite" href="<?php echo get_permalink();?>">Lire la suite</a>
+    </p>
     <div class="card-date">
         Publié le <?php echo get_the_date()?> par <?php echo get_the_author()?>
     </div>
